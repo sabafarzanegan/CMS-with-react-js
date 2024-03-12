@@ -18,10 +18,11 @@
 }
 .header-icon{
     font-size: 18px;
-    border: 1px solid var(--green);
+    border: 1px solid var(--main-blue);
     padding: 5px;
-    background-color:var(--green);
+    background-color:var(--main-blue);
     border-radius: 4px;
+    color: var(--white);
 }
 
 .search-box input{
@@ -34,8 +35,9 @@
     all: unset;
     padding: 10px 18px;
     margin-left: 5px;
-    border: 1px solid #2D9596;
-    background-color: #2D9596;
+    border: 1px solid var(--main-blue);
+    background-color: var(--main-blue);
+    color: var(--white);
     border-radius: 6px;
 
 }

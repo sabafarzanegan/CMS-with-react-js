@@ -1,8 +1,13 @@
 import React from "react";
 import Sidebar from "./components/sidebar/Sidebar";
-import "./App.css"
+import "./App.css";
 import Header from "./components/Header/Header";
-import { Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Productes from "./components/Productes/Productes";
+import Comments from "./components/Comments/Comments";
+import Users from "./components/Users/Users";
+import Orders from "./components/Orders/Orders";
+import Offs from "./components/Offs/Offs";
 
 function App() {
   return (
@@ -10,7 +15,13 @@ function App() {
       <Sidebar />
       <div className="app-container">
         <Header />
-        {/* <Router/> */}
+        <Routes>
+          <Route path="/productes" element={<Productes />} />
+          <Route path="/comments" element={<Comments />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/offs" element={<Offs />} />
+        </Routes>
       </div>
     </>
   );
