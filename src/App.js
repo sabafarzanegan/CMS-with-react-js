@@ -1,11 +1,17 @@
 import React from "react";
 import Sidebar from "./components/sidebar/Sidebar";
+import "./App.css"
+import Header from "./components/Header/Header";
+import { Router } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div>دیجی لند</div>
       <Sidebar />
+      <div className="app-container">
+        <Header />
+        {/* <Router/> */}
+      </div>
     </>
   );
 }
