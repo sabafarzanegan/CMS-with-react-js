@@ -1,10 +1,13 @@
-import React from 'react'
-import "./Users.css"
+import React from "react";
+import "./Users.css";
+import Errorbox from "../Errorbox/Errorbox";
 
 function Users() {
   return (
-    <div>Users</div>
-  )
+    <>
+      <Errorbox msg="کاربری یافت نشد" />
+    </>
+  );
 }
 
-export default Users
+export default Users;

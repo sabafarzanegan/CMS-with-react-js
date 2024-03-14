@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Orders.css"
+import Errorbox from '../Errorbox/Errorbox'
 
 function Orders() {
   return (
-    <div>Orders</div>
+    <>
+     <Errorbox msg="سفارشی یافت نشد"/>
+    </>
   )
 }
 

@@ -10,7 +10,7 @@
 .sidbar-content {
   display: flex;
   justify-content: end;
-  padding-right: 30px;
+
   margin-top: 30px;
 }
 .sidbar-content ul {
@@ -26,7 +26,6 @@
   cursor: pointer;
   padding: 8px 10px;
   transition: all ease 0.5s;
- 
 }
 .sidbar-content li a {
   font-size: 17px;
@@ -34,14 +33,14 @@
   color: var(--white);
   text-decoration: none;
 }
-.sidbar-content li a:first-child{
+.sidbar-content li a:first-child {
   margin-bottom: 20px;
 }
 .sidbar-content ul li:hover {
   background-color: var(--blue);
   border: 1px solid var(--blue);
   border-radius: 10px;
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
 .sidbar-title {
   text-align: center;
@@ -51,6 +50,6 @@
   border-bottom: 1px solid var(--white);
   font-size: 20px;
 }
-.sidbar-icons{
+.sidbar-icons {
   margin-left: 8px;
 }

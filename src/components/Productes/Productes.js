@@ -1,9 +1,14 @@
 import React from 'react'
 import "./Productes.css"
+import Errorbox from '../Errorbox/Errorbox'
+import AddProduct from '../Addproduct/AddProduct'
 
 function Productes() {
   return (
-    <div>Productes</div>
+    <>
+      <Errorbox msg="محصولی یافت نشد" />
+      <AddProduct/>
+    </>
   )
 }
 
