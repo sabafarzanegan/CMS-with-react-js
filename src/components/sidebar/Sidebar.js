@@ -9,32 +9,49 @@ import { BsCurrencyDollar } from "react-icons/bs";
 import { Link } from "react-router-dom";
 function Sidebar() {
   return (
-    
     <>
       <div className="sidebar-container">
         <h1 className="sidbar-title">به داشبورد خود خوش آمدید</h1>
         <div className="sidbar-content">
           <ul>
             <li>
-              <Link to="/">صفحه اصلی<FaHome className="sidbar-icons" /></Link>
+              <Link to="/">
+                <FaHome className="sidbar-icons" />
+                صفحه اصلی
+              </Link>
             </li>
             <li>
-              <Link to="/productes">محصولات<MdOutlineProductionQuantityLimits className="sidbar-icons" /></Link>
+              <Link to="/productes">
+                <MdOutlineProductionQuantityLimits className="sidbar-icons" />
+                محصولات
+              </Link>
             </li>
             <li>
-              <Link to="/comments">کامنت ها<FaRegCommentDots className="sidbar-icons" /></Link>
+              <Link to="/comments">
+                {" "}
+                <FaRegCommentDots className="sidbar-icons" />
+                کامنت ها
+              </Link>
             </li>
             <li>
-              <Link to="/users">کاربران <HiOutlineUsers className="sidbar-icons"/></Link>
+              <Link to="/users">
+                {" "}
+                <HiOutlineUsers className="sidbar-icons" />
+                کاربران
+              </Link>
             </li>
             <li>
-              <Link to="/orders">سفارشات<PiBagBold className="sidbar-icons" /></Link>
+              <Link to="/orders">
+                <PiBagBold className="sidbar-icons" />
+                سفارشات
+              </Link>
             </li>
             <li>
-              <Link to="/offs">تخفیف ها<BsCurrencyDollar className="sidbar-icons"/></Link>
+              <Link to="/offs">
+                <BsCurrencyDollar className="sidbar-icons" />
+                تخفیف ها
+              </Link>
             </li>
-           
-    
           </ul>
         </div>
       </div>

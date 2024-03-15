@@ -1,6 +1,6 @@
 import React from "react";
 import "./AddProduct.css";
-
+import ProductTable from "../Producttable/ProductTable";
 
 function AddProduct() {
   return (
@@ -29,11 +29,15 @@ function AddProduct() {
             </div>
             <div className="input-item">
               <input type="text" placeholder=" میزان فروش محصول را بنویسید" />
-                      </div>
-                      <button type="submit" className="add-product-btn">ثبت محصول</button>
+            </div>
+            <button type="submit" className="add-product-btn">
+              ثبت محصول
+            </button>
           </form>
         </div>
       </div>
+      <h1 className="addproduct-title">محصولات</h1>
+      
     </>
   );
 }
