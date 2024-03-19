@@ -1,11 +1,18 @@
 import React from "react";
 import "./ProductTable.css";
 
-function ProductTable({ setIsActiveModal, isActiveModal }) {
-  
+function ProductTable({
+  setIsActiveModal,
+  isActiveModal,
+  isDetailModal,
+  setisDetailModal,
+}) {
   function DeletProductHandler() {
     setIsActiveModal((prevstate) => !prevstate);
   }
+  const DetailProductHandler = () => {
+    setisDetailModal((prevstate) => !prevstate);
+  };
   return (
     <>
       <table className="Product-table">
@@ -31,7 +38,12 @@ function ProductTable({ setIsActiveModal, isActiveModal }) {
             <td>93000تومان</td>
             <td>10</td>
             <td>
-              <button className="product-table-btn">جزییات</button>
+              <button
+                onClick={DetailProductHandler}
+                className="product-table-btn"
+              >
+                جزییات
+              </button>
               <button
                 onClick={DeletProductHandler}
                 className="product-table-btn"
