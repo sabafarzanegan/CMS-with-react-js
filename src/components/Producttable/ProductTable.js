@@ -3,15 +3,19 @@ import "./ProductTable.css";
 
 function ProductTable({
   setIsActiveModal,
-  isActiveModal,
-  isDetailModal,
+
   setisDetailModal,
+
+  setisEditModal,
 }) {
   function DeletProductHandler() {
     setIsActiveModal((prevstate) => !prevstate);
   }
   const DetailProductHandler = () => {
     setisDetailModal((prevstate) => !prevstate);
+  };
+  const EditProductHandler = () => {
+    setisEditModal((prevstate) => !prevstate);
   };
   return (
     <>
@@ -50,7 +54,12 @@ function ProductTable({
               >
                 حذف
               </button>
-              <button className="product-table-btn">ویرایش</button>
+              <button
+                onClick={EditProductHandler}
+                className="product-table-btn"
+              >
+                ویرایش
+              </button>
             </td>
           </tr>
         </tbody>
