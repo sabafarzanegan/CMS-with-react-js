@@ -38,7 +38,25 @@ function Productes() {
         onsubmit={UpdateProduct}
         onclose={() => setisEditModal(false)}
         isEditModal={isEditModal}
-      ></EditModal>
+      >
+        <form className="edit-form-group">
+          <div className="input-item">
+            <input type="text" placeholder="عنوان جدید را وارد کنید" />
+          </div>
+          <div className="input-item">
+            <input type="text" placeholder="قیمت جدید را وارد کنید" />
+          </div>
+          <div className="input-item">
+            <input type="text" placeholder="موجودی جدید را وارد کنید" />
+          </div>
+          <div className="input-item">
+            <input type="text" placeholder="میزان محبوبیت جدید را وارد کنید" />
+          </div>
+          <div className="input-item">
+            <input type="text" placeholder="آدرس عکس جدید  را وارد کنید" />
+          </div>
+        </form>
+      </EditModal>
     </>
   );
 }

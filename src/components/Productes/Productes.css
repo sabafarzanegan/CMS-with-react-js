@@ -1,0 +1,15 @@
+.edit-form-group{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.edit-form-group .input-item{
+    margin: 5px 0px;
+
+}
+.edit-form-group .input-item input{
+    outline: none;
+}
